@@ -44,6 +44,7 @@ public class CriarPaletaActivity extends AppCompatActivity {
         loadPaletaWebView();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_paleta);
+
         setSupportActionBar(toolbar);
     }
 
