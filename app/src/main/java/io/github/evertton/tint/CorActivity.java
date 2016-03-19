@@ -58,7 +58,7 @@ public class CorActivity extends AppCompatActivity {
             }
         });
 
-        Button comoRgbHex = (Button) findViewById(R.id.como_hex_rgb);
+        Button comoRgbHex = (Button) findViewById(R.id.como_rgb_hex);
         comoRgbHex.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

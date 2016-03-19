@@ -19,4 +19,17 @@
         tripleta hexadecimal formada por 3 bytes. Cada byte varia de 00h a FFh, que em notação
         decimal é equivalente a variação de 0 a 255.\n\n\tAssim notamos que tanto RGB, quanto HEX
         são apenas dois sistemas númericos distintos para representar a mesma informação.</string>
+    <string name="hex_para_rgb">\tA conversão de uma hexadecimal para escala rgb é bastante simples,
+        uma vez que, o código hexadecimal tem o seguinte formato #RRGGBB.\n\n\tEntão, basta ignorarmos
+        o "#" e pegar os próximos pares de caracteres, onde cada par irá representar uma variável
+        de cor R, G e B, respectivamente.\n\n\tPeguemos como exemplo a cor abaixo:</string>
+    <string name="hex_para_rgb_r">DD\n\ncorrespondente a <b>221</b> em decimal</string>
+    <string name="hex_para_rgb_g">4B\n\ncorrespondente a <b>75</b> em decimal</string>
+    <string name="hex_para_rgb_b">39\n\ncorrespondente a <b>57</b> em decimal</string>
+    <string name="rgb_para_hex">\tA conversão de uma cor na escala RGB para hexadecimal é bastante
+        simples, basta pegar as variáveis R, G e B, então converter cada uma delas para hexadecimal
+        e uni-las em uma mesma cadeia de caracteres.\n\n\tTomando como exemplo a cor abaixo:</string>
+    <string name="rgb_para_hex_1">128\n\ncorrespondente a <b>80</b> em hexadecimal</string>
+    <string name="rgb_para_hex_2">234\n\ncorrespondente a <b>EA</b> em hexadecimal</string>
+    <string name="rgb_para_hex_3">75\n\ncorrespondente a <b>4B</b> em hexadecimal</string>
 </resources>

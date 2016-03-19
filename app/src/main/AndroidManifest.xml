@@ -41,7 +41,9 @@
         <activity
             android:name=".HexToRgbActivity"
             android:parentActivityName=".MostrarPaletaActivity" />
-        <activity android:name=".RgbToHexActivity"></activity>
+        <activity
+            android:name=".RgbToHexActivity"
+            android:parentActivityName=".MostrarPaletaActivity" />
     </application>
 
 </manifest>
