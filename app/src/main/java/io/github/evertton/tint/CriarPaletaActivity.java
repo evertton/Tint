@@ -23,6 +23,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.EditText;
 
 import io.github.evertton.tint.io.github.evertton.tint.model.Paleta;
@@ -33,8 +34,24 @@ public class CriarPaletaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_criar_paleta);
+
+        loadPaletaWebView();
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_paleta);
         setSupportActionBar(toolbar);
+    }
+
+    private void loadPaletaWebView() {
+        String data = "<style> body{background:#EEEEEE;} .codes{width: 75px; height: 60px; float: left; margin-top: 20px;}";
+        data += ".codes .sample { display: block; width: 60px; height: 20px; margin: auto; } .codes p { text-align: center; margin: 0; } </style>";
+        data += "<body><div class=\"codes\">  <span class=\"sample\" style=\"background-color:#490A3D;\"></span><p>#490A3D</p></div>";
+        data += "<div class=\"codes\">  <span class=\"sample\" style=\"background-color:#BD1550;\"></span><p>#BD1550</p></div>";
+        data += "<div class=\"codes\">  <span class=\"sample\" style=\"background-color:#E97F02;\"></span><p>#E97F02</p></div>";
+        data += "<div class=\"codes\">  <span class=\"sample\" style=\"background-color:#F8CA00;\"></span><p>#F8CA00</p></div>";
+        data += "<div class=\"codes\">  <span class=\"sample\" style=\"background-color:#8A9B0F;\"></span><p>#8A9B0F</p></div></body>";
+
+        WebView paletaWV = (WebView) findViewById(R.id.paleta_webview);
+        paletaWV.loadData(data, "text/html", "utf-8");
     }
 
     private void startAdicionarCor(int idLast) {

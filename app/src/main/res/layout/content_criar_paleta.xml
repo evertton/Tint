@@ -76,4 +76,9 @@
 
     </RelativeLayout>
 
+    <WebView
+        android:id="@+id/paleta_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
