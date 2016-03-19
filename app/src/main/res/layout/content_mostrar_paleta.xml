@@ -29,7 +29,16 @@
 
     <ListView
         android:id="@+id/colors_list"
+        android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="* Pressione e segure para copiar uma cor para a área de transferência!"
+        android:textSize="10dp" />
 
 </RelativeLayout>

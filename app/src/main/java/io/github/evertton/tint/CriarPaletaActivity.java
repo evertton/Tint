@@ -78,7 +78,7 @@ public class CriarPaletaActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.criar_paleta_action) {
             EditText et = (EditText) findViewById(R.id.cnome_paleta);
-            Paleta.lista.add(new Paleta(et.getText().toString()));
+            Paleta.lista.add(new Paleta(Paleta.lista.size() - 1, et.getText().toString()));
             startAdicionarCor(Paleta.lista.size() - 1);
             return true;
         }

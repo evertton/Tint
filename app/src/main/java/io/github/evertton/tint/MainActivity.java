@@ -58,9 +58,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openCriarPaleta() {
-        this.finish();
         Intent intent = new Intent(this, CriarPaletaActivity.class);
         startActivity(intent);
+        this.finish();
     }
 
     private void showPaleta(int id) {

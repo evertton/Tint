@@ -37,6 +37,7 @@ import io.github.evertton.tint.io.github.evertton.tint.model.Paleta;
 public class AdicionarCorActivity extends AppCompatActivity {
 
     private Paleta paleta;
+    private int parent = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,8 @@ public class AdicionarCorActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         paleta = Paleta.lista.get(this.getIntent().getIntExtra("idPaleta", 0));
+
+        parent = this.getIntent().getIntExtra("parent", -1);
 
         setTitle(paleta.getNome());
 
@@ -104,8 +107,20 @@ public class AdicionarCorActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.concluir_cor_action) {
             this.finish();
-            Intent intent = new Intent(this, MainActivity.class);
+
+            Intent intent = null;
+
+            switch (parent) {
+                case 1:
+                    intent = new Intent(this, MostrarPaletaActivity.class);
+                    break;
+                default:
+                    intent = new Intent(this, MainActivity.class);
+                    break;
+            }
+
             startActivity(intent);
+
             return true;
         }
 

@@ -6,10 +6,11 @@ public class Paleta {
 
     public static ArrayList<Paleta> lista = new ArrayList<Paleta>();
 
+    private int id;
     private String nome;
     private ArrayList<String> cores;
 
-    public Paleta(String nome) {
+    public Paleta(int id, String nome) {
         this.nome = nome;
         cores = new ArrayList<String>();
     }
@@ -20,6 +21,10 @@ public class Paleta {
 
     public ArrayList<String> getCores() {
         return cores;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getNome() {
