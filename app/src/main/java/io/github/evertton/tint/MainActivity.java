@@ -29,6 +29,11 @@ import android.widget.ListView;
 import io.github.evertton.tint.io.github.evertton.tint.model.Paleta;
 import io.github.evertton.tint.io.github.evertton.tint.model.PaletaAdapter;
 
+/**
+ * Definição da atividade principal.
+ *
+ * @author Evertton de Lima <e.everttonlima@gmail.com>
+ */
 public class MainActivity extends AppCompatActivity {
 
     public ListView paletaList;
@@ -57,18 +62,29 @@ public class MainActivity extends AppCompatActivity {
         );
     }
 
+    /**
+     * Abre a tela de Criar Paleta.
+     */
     private void openCriarPaleta() {
         Intent intent = new Intent(this, CriarPaletaActivity.class);
         startActivity(intent);
         this.finish();
     }
 
+    /**
+     * Abre a tela de exibição de Paleta.
+     *
+     * @param id identificador da paleta selecionada.
+     */
     private void showPaleta(int id) {
         Intent intent = new Intent(this, MostrarPaletaActivity.class);
         intent.putExtra("idList", id);
         startActivity(intent);
     }
 
+    /**
+     * Atualiza a listagem de paletas.
+     */
     private void updatePaletaList() {
         paletaList = (ListView) findViewById(R.id.paleta_list);
 

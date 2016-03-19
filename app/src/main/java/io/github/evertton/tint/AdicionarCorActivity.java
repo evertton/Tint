@@ -34,9 +34,22 @@ import android.widget.TextView;
 
 import io.github.evertton.tint.io.github.evertton.tint.model.Paleta;
 
+/**
+ * Definição da atividade Adicionar Cor a uma paleta.
+ *
+ * @author Evertton de Lima <e.everttonlima@gmail.com>
+ */
 public class AdicionarCorActivity extends AppCompatActivity {
 
+    /**
+     * Define a paleta que foi selecionada para inserção de cores.
+     */
     private Paleta paleta;
+
+    /**
+     * Uma variável inteira que representa a atividade pai, o valor padrão -1 corresponde a
+     * atividade principal.
+     */
     private int parent = -1;
 
     @Override
@@ -70,6 +83,9 @@ public class AdicionarCorActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Faz o teclado ser escondido.
+     */
     private void esconderTeclado() {
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 
@@ -84,6 +100,11 @@ public class AdicionarCorActivity extends AppCompatActivity {
             inputManager.hideSoftInputFromWindow(teclado, InputMethodManager.HIDE_NOT_ALWAYS);
     }
 
+    /**
+     * Adiciona uma cor a paleta selecionada.
+     *
+     * @param text a cor que deverá ser adicionada a paleta.
+     */
     private void addCor(String text) {
         paleta.addCor(text);
         TextView tv = (TextView) findViewById(R.id.added_cores);

@@ -33,9 +33,20 @@ import android.widget.ListView;
 import io.github.evertton.tint.io.github.evertton.tint.model.CorAdapter;
 import io.github.evertton.tint.io.github.evertton.tint.model.Paleta;
 
+/**
+ * Definição da atividade Mostrar Paleta.
+ *
+ * @author Evertton de Lima <e.everttonlima@gmail.com>
+ */
 public class MostrarPaletaActivity extends AppCompatActivity {
 
+    /**
+     * Define uma ListView para listagem das cores que compõe uma paleta.
+     */
     public ListView colorsList;
+    /**
+     * Armazena a paleta selecionada.
+     */
     private Paleta paleta;
 
     @Override
@@ -53,6 +64,9 @@ public class MostrarPaletaActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Renderiza a listagem de cores na tela.
+     */
     private void showColors() {
 
         colorsList = (ListView) findViewById(R.id.colors_list);
@@ -89,6 +103,11 @@ public class MostrarPaletaActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Abre a atividade Cor para exibir informações adicionais sobre a cor clicada.
+     *
+     * @param id identificador da cor clicada.
+     */
     private void openCor(int id) {
         Intent intent = new Intent(this, CorActivity.class);
         intent.putExtra("cor", paleta.getCores().get(id));

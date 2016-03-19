@@ -28,6 +28,12 @@ import android.widget.EditText;
 
 import io.github.evertton.tint.io.github.evertton.tint.model.Paleta;
 
+
+/**
+ * Definição da atividade Criar Paleta.
+ *
+ * @author Evertton de Lima <e.everttonlima@gmail.com>
+ */
 public class CriarPaletaActivity extends AppCompatActivity {
 
     @Override
@@ -41,6 +47,9 @@ public class CriarPaletaActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
+    /**
+     * Renderiza na webView da tela criar paleta o conteúdo HTML no corpo do método.
+     */
     private void loadPaletaWebView() {
         String data = "<style> body{background:#EEEEEE;} .codes{width: 75px; height: 60px; float: left; margin-top: 20px;}";
         data += ".codes .sample { display: block; width: 60px; height: 20px; margin: auto; } .codes p { text-align: center; margin: 0; } </style>";
@@ -54,6 +63,11 @@ public class CriarPaletaActivity extends AppCompatActivity {
         paletaWV.loadData(data, "text/html", "utf-8");
     }
 
+    /**
+     * Abre a tela adicionar cor.
+     *
+     * @param idLast o identificador da última paleta inserida.
+     */
     private void startAdicionarCor(int idLast) {
         this.finish();
         Intent intent = new Intent(this, AdicionarCorActivity.class);
