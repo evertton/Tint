@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Paleta {
 
     public static ArrayList<Paleta> lista = new ArrayList<Paleta>();
-
+    
     private int id;
     private String nome;
     private ArrayList<String> cores;

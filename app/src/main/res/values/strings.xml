@@ -4,9 +4,19 @@
     <string name="title_activity_criar_paleta">Nova Paleta</string>
     <string name="title_activity_adicionar_cor">AdicionarCorActivity</string>
     <string name="title_activity_mostrar_paleta">MostrarPaletaActivity</string>
-    <string name="sobre_paletas">Uma <b>paleta</b> é um conjunto de cores usados para compor um
+    <string name="sobre_paletas">\tUma <b>paleta</b> é um conjunto de cores usados para compor um
         sistema de coloração seja para uma aplicação ou uma página web.</string>
-    <string name="sobre_cores">A <b>cor</b> é uma <em>percepção visual</em> provocada pela ação de
+    <string name="sobre_cores">\tA <b>cor</b> é uma <em>percepção visual</em> provocada pela ação de
         um feixe de fótons sobre células especializadas da retina, que transmitem através de
         informação pré-processada ao nervo óptico, impressões para o sistema nervoso.</string>
+    <string name="title_activity_cor">CorActivity</string>
+    <string name="hex_vs_rgb">\t<b>RGB</b> e <b>HEX</b> são duas formas de representar cores em
+        sistemas de computação. Tanto o HEX quanto o RGB retornam os mesmos resultados de cor.
+        A diferença é que, dependendo do dispositivo ou software que você está utilizando, um ou
+        outro sistema numérico de cor pode estar ausente.\n\n\tO <b>RGB</b> é formado por uma tupla
+        de três inteiros que variam de 0 a 255, definindo a intesidade correspondente as cores
+        vermelha (r), verde (g) e azul (b) respectivamente.\n\n\tEnquanto, o <b>HEX</b> é uma
+        tripleta hexadecimal formada por 3 bytes. Cada byte varia de 00h a FFh, que em notação
+        decimal é equivalente a variação de 0 a 255.\n\n\tAssim notamos que tanto RGB, quanto HEX
+        são apenas dois sistemas númericos distintos para representar a mesma informação.</string>
 </resources>

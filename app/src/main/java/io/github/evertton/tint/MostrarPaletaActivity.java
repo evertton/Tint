@@ -82,13 +82,17 @@ public class MostrarPaletaActivity extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                Snackbar.make(view, "Nome da cor: " + paleta.getCores().get(position), Snackbar.LENGTH_LONG).show();
-
+                openCor((int) id);
             }
 
         });
 
+    }
+
+    private void openCor(int id) {
+        Intent intent = new Intent(this, CorActivity.class);
+        intent.putExtra("cor", paleta.getCores().get(id));
+        startActivity(intent);
     }
 
     @Override

@@ -21,15 +21,27 @@
         <activity
             android:name=".CriarPaletaActivity"
             android:label="@string/title_activity_criar_paleta"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AdicionarCorActivity"
             android:label="@string/title_activity_adicionar_cor"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MostrarPaletaActivity"
             android:label="@string/title_activity_mostrar_paleta"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CorActivity"
+            android:label="@string/title_activity_cor"
+            android:parentActivityName=".MostrarPaletaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HexToRgbActivity"
+            android:parentActivityName=".MostrarPaletaActivity" />
+        <activity android:name=".RgbToHexActivity"></activity>
     </application>
 
 </manifest>
