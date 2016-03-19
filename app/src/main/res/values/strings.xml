@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tint</string>
+    <string name="action_add">Adicionar</string>
+    <string name="title_activity_criar_paleta">Nova Paleta</string>
+    <string name="title_activity_adicionar_cor">AdicionarCorActivity</string>
+    <string name="title_activity_mostrar_paleta">MostrarPaletaActivity</string>
+    <string name="sobre_paletas">Uma <b>paleta</b> é um conjunto de cores usados para compor um
+        sistema de coloração seja para uma aplicação ou uma página web.</string>
+    <string name="exemplo_paleta"></string>
+</resources>

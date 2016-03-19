@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This file is part of Tint.
+
+    Tint is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Tint is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Tint.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="io.github.evertton.tint.AdicionarCorActivity"
+    tools:showIn="@layout/activity_adicionar_cor">
+
+    <EditText
+        android:id="@+id/hex_cor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cor em hexadecimal" />
+
+    <Button
+        android:id="@+id/add_cor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar cor" />
+
+    <TextView
+        android:id="@+id/added_cores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
