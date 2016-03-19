@@ -68,15 +68,10 @@
             android:layout_marginTop="16dp"
             android:src="@drawable/paleta" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="96dp"
-            android:text="@string/exemplo_paleta" />
-
     </RelativeLayout>
 
     <WebView
+        android:layout_marginTop="16dp"
         android:id="@+id/paleta_webview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

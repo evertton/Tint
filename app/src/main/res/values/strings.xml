@@ -6,5 +6,7 @@
     <string name="title_activity_mostrar_paleta">MostrarPaletaActivity</string>
     <string name="sobre_paletas">Uma <b>paleta</b> é um conjunto de cores usados para compor um
         sistema de coloração seja para uma aplicação ou uma página web.</string>
-    <string name="exemplo_paleta"></string>
+    <string name="sobre_cores">A <b>cor</b> é uma <em>percepção visual</em> provocada pela ação de
+        um feixe de fótons sobre células especializadas da retina, que transmitem através de
+        informação pré-processada ao nervo óptico, impressões para o sistema nervoso.</string>
 </resources>
